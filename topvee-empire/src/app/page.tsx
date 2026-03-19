@@ -104,7 +104,7 @@ export default function Home() {
               <span className="text-sm text-gray-400">Join the conversation</span>
               <a href="https://x.com/Angelbeauties77" target="_blank" 
                  className="bg-emerald-500 text-black px-4 py-2 rounded-lg font-bold hover:bg-emerald-600 transition-all flex items-center space-x-2">
-                <i className="fab fa-x-twitter"></i>
+                <span>📱</span>
                 <span>Watch Live</span>
               </a>
             </div>
@@ -126,13 +126,13 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-4">
               <a href="https://x.com/Angelbeauties77" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-                <i className="fab fa-x-twitter"></i>
+                <span>📱</span>
               </a>
               <a href="https://youtube.com/@topveemedia" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-                <i className="fab fa-youtube"></i>
+                <span>📺</span>
               </a>
               <a href="https://instagram.com/angelbeauties78" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-                <i className="fab fa-instagram"></i>
+                <span>📸</span>
               </a>
             </div>
           </div>
@@ -149,13 +149,13 @@ export default function Home() {
           </a>
           <div className="mt-12 flex justify-center gap-8 text-4xl">
             <a href="https://x.com/Angelbeauties77" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-              <i className="fab fa-x-twitter"></i>
+              <span>📱</span>
             </a>
             <a href="https://youtube.com/@topveemedia" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-              <i className="fab fa-youtube"></i>
+              <span>📺</span>
             </a>
             <a href="https://instagram.com/angelbeauties78" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-              <i className="fab fa-instagram"></i>
+              <span>📸</span>
             </a>
           </div>
         </div>
@@ -235,7 +235,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl p-6 border border-emerald-900">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center">
-                  <i className="fab fa-x-twitter text-black text-xl"></i>
+                  <span className="text-black text-xl">📱</span>
                 </div>
                 <div>
                   <div className="font-bold">@Angelbeauties77</div>
@@ -257,7 +257,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl p-6 border border-emerald-900">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center">
-                  <i className="fab fa-x-twitter text-black text-xl"></i>
+                  <span className="text-black text-xl">📱</span>
                 </div>
                 <div>
                   <div className="font-bold">@Angelbeauties77</div>
