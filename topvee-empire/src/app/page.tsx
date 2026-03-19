@@ -1,6 +1,6 @@
 ﻿'use client';
 import Image from 'next/image';
-import { FaX, FaYoutube, FaInstagram } from 'react-icons/fa6';
+import { FaXTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 export default function Home() {
   const courses = [
@@ -49,8 +49,63 @@ export default function Home() {
         .neon { text-shadow: 0 0 20px #22ff88, 0 0 40px #22ff88; }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-8px); box-shadow: 0 0 30px rgba(34, 255, 136, 0.4); }
+        
+        /* Responsive Design */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 40px 0; }
+        
+        /* Mobile First Responsive */
+        @media (max-width: 768px) {
+          .neon { font-size: 2rem; }
+          .glitch { font-size: 3rem; }
+          .hero-text { font-size: 1.5rem; }
+          .btn { padding: 12px 24px; font-size: 1rem; }
+          .card-grid { grid-template-columns: 1fr; }
+          .ticker-content { animation-duration: 40s; }
+          .crypto-price { padding: 8px 12px; font-size: 0.8rem; }
+          .social-icons { gap: 16px; }
+          .social-icons i { font-size: 1.5rem; }
+          .nav-links { display: none; }
+          .mobile-menu-btn { display: block; }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+          .neon { font-size: 3rem; }
+          .glitch { font-size: 4rem; }
+          .hero-text { font-size: 2rem; }
+          .card-grid { grid-template-columns: repeat(2, 1fr); }
+          .ticker-content { animation-duration: 30s; }
+        }
+        
+        @media (min-width: 1025px) {
+          .neon { font-size: 4rem; }
+          .glitch { font-size: 6rem; }
+          .hero-text { font-size: 3rem; }
+          .card-grid { grid-template-columns: repeat(3, 1fr); }
+          .ticker-content { animation-duration: 20s; }
+        }
         .glitch {
-          animation: glitch 1s linear infinite;
+          position: relative;
+          animation: glitch 2s infinite;
+        }
+        .glitch::before,
+        .glitch::after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .glitch::before {
+          animation: glitch-1 0.5s infinite linear alternate-reverse;
+          color: #ff00ff;
+          z-index: -1;
+        }
+        .glitch::after {
+          animation: glitch-2 0.2s infinite linear alternate-reverse;
+          color: #00ffff;
+          z-index: -2;
         }
         @keyframes glitch {
           0%, 100% { transform: translate(0); }
@@ -59,6 +114,14 @@ export default function Home() {
           6% { transform: translate(2px, 2px); }
           8% { transform: translate(2px, -2px); }
           10% { transform: translate(0); }
+        }
+        @keyframes glitch-1 {
+          0% { transform: translate(2px, 0); }
+          100% { transform: translate(-2px, 0); }
+        }
+        @keyframes glitch-2 {
+          0% { transform: translate(-2px, 0); }
+          100% { transform: translate(2px, 0); }
         }
         .ticker-tape {
           background: linear-gradient(90deg, #000, #111, #000);
@@ -128,7 +191,7 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-4">
               <a href="https://x.com/Angelbeauties77" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-                <FaX className="text-2xl" />
+                <FaXTwitter className="text-2xl" />
               </a>
               <a href="https://youtube.com/@topveemedia" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
                 <FaYoutube className="text-2xl" />
@@ -151,13 +214,13 @@ export default function Home() {
           </a>
           <div className="mt-12 flex justify-center gap-8 text-4xl">
             <a href="https://x.com/Angelbeauties77" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-              <span>📱</span>
+              <FaXTwitter className="text-2xl" />
             </a>
             <a href="https://youtube.com/@topveemedia" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-              <span>📺</span>
+              <FaYoutube className="text-2xl" />
             </a>
             <a href="https://instagram.com/angelbeauties78" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-              <span>📸</span>
+              <FaInstagram className="text-2xl" />
             </a>
           </div>
         </div>
