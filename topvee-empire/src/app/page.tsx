@@ -1,5 +1,6 @@
 ﻿'use client';
 import Image from 'next/image';
+import { FaX, FaYoutube, FaInstagram } from 'react-icons/fa6';
 
 export default function Home() {
   const courses = [
@@ -127,13 +128,13 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-4">
               <a href="https://x.com/Angelbeauties77" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-                <span>📱</span>
+                <FaX className="text-2xl" />
               </a>
               <a href="https://youtube.com/@topveemedia" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-                <span>📺</span>
+                <FaYoutube className="text-2xl" />
               </a>
               <a href="https://instagram.com/angelbeauties78" target="_blank" className="hover:text-emerald-400 transition-colors" rel="noreferrer">
-                <span>📸</span>
+                <FaInstagram className="text-2xl" />
               </a>
             </div>
           </div>
