@@ -140,16 +140,17 @@ export default function Home() {
           0% { transform: translateX(0); }
           100% { transform: translateX(-100%); }
         }
-        .crypto-price {
-          display: inline-flex;
-          align-items: center;
-          gap: 1rem;
-          padding: 0.5rem 1rem;
-          margin: 0 1rem;
-          border: 1px solid #22ff88;
-          border-radius: 999px;
-          background: rgba(34, 255, 136, 0.1);
-        }
+    .crypto-price {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.5rem;
+      margin: 0 0.5rem;
+      border: 1px solid #22ff88;
+      border-radius: 999px;
+      background: rgba(34, 255, 136, 0.1);
+      font-size: 0.8rem;
+    }
         .price-up { color: #00ff88; }
         .price-down { color: #ff4444; }
       `}</style>
@@ -169,7 +170,7 @@ export default function Home() {
               <span className="text-sm text-gray-400">Join the conversation</span>
               <a href="https://x.com/Angelbeauties77" target="_blank" 
                  className="bg-emerald-500 text-black px-4 py-2 rounded-lg font-bold hover:bg-emerald-600 transition-all flex items-center space-x-2">
-                <span>📱</span>
+                <FaXTwitter className="text-lg" />
                 <span>Watch Live</span>
               </a>
             </div>
