@@ -1,4 +1,5 @@
 ﻿'use client';
+import Image from 'next/image';
 
 export default function Home() {
   const courses = [
@@ -168,7 +169,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {courses.map((course, index) => (
               <div key={index} className="card-hover rounded-3xl bg-zinc-900 p-8 border border-emerald-900">
-                <img src={course.image} alt={course.title} className="w-full h-48 object-cover rounded-2xl mb-6" />
+                <Image src={course.image} alt={course.title} width={400} height={200} className="w-full h-48 object-cover rounded-2xl mb-6" />
                 <h3 className="text-3xl font-bold mb-2">{course.title}</h3>
                 <p className="text-emerald-400 mb-4">{course.price}</p>
                 <p className="mb-6">{course.description}</p>

@@ -1,0 +1,28 @@
+{
+  "name": "topvee-mvp",
+  "version": "1.0.0",
+  "description": "Topvee Media - Dual Project Repository (HTML + Next.js)",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo '❌ This is not a Node.js project. Use: npm run start:html or npm run start:next'",
+    "start:html": "echo '✅ Opening standalone HTML website...' && start index.html",
+    "start:next": "echo '✅ Starting Next.js development server...' && cd topvee-empire && npm run dev",
+    "install:next": "echo '✅ Installing Next.js dependencies...' && cd topvee-empire && npm install",
+    "build:next": "echo '✅ Building Next.js application...' && cd topvee-empire && npm run build",
+    "help": "echo 'Available commands:' && echo '  npm run start:html  - Open standalone HTML website' && echo '  npm run start:next  - Start Next.js development server' && echo '  npm run install:next - Install Next.js dependencies' && echo '  npm run build:next   - Build Next.js for production'"
+  },
+  "keywords": [
+    "crypto",
+    "trading",
+    "education",
+    "html",
+    "nextjs",
+    "react"
+  ],
+  "author": "Valentine Okeke",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Indiannasharma/topvee-empire.git"
+  }
+}

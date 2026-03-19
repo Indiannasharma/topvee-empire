@@ -1,0 +1,10 @@
+.neon {
+  text-shadow: 0 0 20px #22ff88, 0 0 40px #22ff88;
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(34, 255, 136, 0.4);
+}
